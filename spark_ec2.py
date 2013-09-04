@@ -61,7 +61,7 @@ def parse_args():
       help="Master instance type (leave empty for same as instance-type)")
   parser.add_option("-r", "--region", default="us-east-1",
       help="EC2 region zone to launch instances in")
-  parser.add_option("-z", "--zone", default="",
+  parser.add_option("-z", "--zone", default="us-east-1c",
       help="Availability zone to launch instances in, or 'all' to spread " +
            "slaves across multiple (an additional $0.01/Gb for bandwidth" +
            "between zones applies)")
